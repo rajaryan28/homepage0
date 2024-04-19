@@ -1,0 +1,21 @@
+body1{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://wallpaperaccess.com/full/2059891.jpg");
+    background-size: cover;
+    border-style: none;
+    border-radius: 4px;
+
+}
+#changeBackgroundButton{
+    background-color: burlywood;
+    height:50px;
+    width: 100px;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: -10px;
+    margin: 2px;
+}
+
+
