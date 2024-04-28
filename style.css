@@ -1,21 +1,248 @@
-body1{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://wallpaperaccess.com/full/2059891.jpg");
-    background-size: cover;
-    border-style: none;
-    border-radius: 4px;
-
+body{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/592/713/original/abstract-dark-purple-background-overlap-layer-on-dark-space-for-background-design-exclusive-wallpaper-design-for-poster-brochure-presentation-website-etc-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
 }
 #changeBackgroundButton{
-    background-color: burlywood;
-    height:50px;
-    width: 100px;
+    background-color: rgb(255, 255, 255);
+    height:30px;
+    width: 60px; 
     border-style: none;
     border-radius: 10px;
     text-align: center;
-    padding: -10px;
-    margin: 2px;
+    cursor: pointer;
+    font-size: 8px;
+    opacity: 60%;
+    font-weight:bolder;
+}
+#changeBackgroundButton:hover{
+  box-shadow:  0 0 5px #ffffff;
+}
+
+/* Search bar*/
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  width: 500px;
+}
+
+select, input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  
+}
+#search-engine{
+  position: absolute;
+  display:flex;
+  margin-left: -8vw;
+  width: 7vw;
+}
+#search-term{
+  width: 39vw;
+  background: transparent;
+  height:20px ;
+  border-radius:20px
+}
+
+#search-term:focus{
+  outline: none;
+  box-shadow: 0 0 5px #00ffff;
+  
+  
+}
+
+#sbtn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: rgb(28, 2, 2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  display:flex;
+  margin-left: 42vw;
+  margin-top: -37px;
+  display: none;
+  
+}
+#sbtn:active{
+  outline: none;
+  box-shadow: 0 0 5px #0a8c45; 
+  color:darkgreen;
 }
 
 
+  /*Animation*/
+
+  @keyframes on-hover {
+    0%{height:8vh;
+        width:3.5vw;}
+    50%{height:8.5vh;
+        width:4vw;}   
+    100%{height:8vh;
+        width:3.5vw;}
+  }
+  /*shortcuts*/
+
+  .shortcut{
+    width: 20vw;
+    display: flex; 
+    flex-direction: row;
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 35vw;
+  }
+  .shortcuts{
+    height:8vh;
+    width:3.5vw;
+    /* display: inline-block; */
+    border-style:solid;
+    border-radius:5px;
+    box-sizing: border-box;
+    background-color:black;
+    /* opacity: 50%; */
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .shortcuts:hover{
+    outline: none;
+    box-shadow:0 0 5px #a2aaa2 ;
+  }
+
+  /* weather*/
+
+   .weather-container {
+    text-align: center;
+    margin: 20px auto;
+    margin: 10vh 0.5vw 5vh 75vw ;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #b09494;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+} 
+
+#weather{
+  color: #412728;
+}
+
+#weather-info {
+    margin-top: 20px;
+    color: #00C9C8;
+}
+
+#ss-search{
+  background-color:rgb(84, 84, 176);
+  border:1px none none ;
+  border-radius: 12px;
+  cursor: pointer
+  ;
+}
+
+.hide{
+  display: none;
+
+}
+
+
+/* time */
+
+#currentTime{
+  color: rgb(141, 150, 159);
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  margin-left: 80vw;
+  margin-top:-74vh
+}
+#currentDate{
+  position: relative;
+  margin-left: 78.5vw;
+  margin-top:-7vh;
+  color: #412728;
+}
+
+/* USD-INR */
+
+#currency-option{
+  position: absolute;
+  bottom: 15%;
+}
+#currency-change{
+  margin-top: 30%;
+  margin-left: 0.5%;
+  font-family:'Courier New', Courier, monospace;
+  color: #A2769D;
+
+}
+
+/* crypto */
+
+
+.crypto-horizontal {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -18px;
+  justify-content: space-between; /* Distribute items evenly */
+  width: 99.5%; /* Stretch the list to full width */
+  font-size: small;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color:#ADA9BB;
+  
+}
+.crypto-horizontal:hover{
+  box-shadow:0 0 5px #484554;
+}
+
+.crypto-horizontal li {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+#crypto-rates{
+ position: absolute; 
+ bottom: 0.3%;
+ right: 0px;
+ left: 3px;
+ align-items: center;
+ color: #887177;
+}
+#crypto-list{
+  color:rgb(128, 77, 94);
+}
+
+
+/* preloader */
+
+#preloader {
+  position: fixed; /* Keep it on top of the page content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  display: flex; /* Center the preloader content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other page elements */
+}
+
+#preloader.hidden {
+  opacity: 0; /* Hide the preloader using opacity */
+  transition: opacity 0.5s ease-out; /* Smooth fade-out transition */
+}
