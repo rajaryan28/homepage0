@@ -4,12 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hompage</title>
-    <link rel="stylesheet" href="/home_page.html/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/home_page/style.css">
 </head>
 <body>
-    <button id="changeBackgroundButton"><h3>Change BG</h3></button>
+    <button id="changeBackgroundButton"><p>Change BG</p></button>
     
-    <script src="/home_page.html/script.js"></script>
+  </div>
+  <div class="search-container">
+    <form action="#">
+      <select name="search-engine" id="search-engine">
+        <option value="google">Google</option>
+        <option value="duckduckgo">DuckDuckGo</option>
+          <option value="bing">Bing</option>
+      </select>
+      <input type="text" id="search-term" placeholder="Enter your search term">
+      <button id="sbtn" type="button" onclick="submitSearch()">Search</button>
+  </form>
 </div>
-</body>
-</html>
+  <div class="shortcut">
+    <div class="shortcuts"  onclick=window.location.href="https://google.com/"><img src="/images/icons8-google-32.png" alt="google"></div>
+    <div class="shortcuts" onclick=window.location.href="https://web.whatsapp.com/"><img src="/images/icons-whatsapp.png" alt="whatsapp-logo"></div>
+    <div class="shortcuts" onclick=window.location.href="https://amazon.com/"><img src="/images/icons-amazon.png" alt="Amazon"></div>
+    <div class="shortcuts" onclick=window.location.href="https://https://gemini.google.com//"><img src="/images/google-gemini-icon.png" alt="Gemini"></div>
+    <div class="shortcuts" onclick=window.location.href="https://youtube.com/"><img src="/images/youtube.png" alt="you tube"></div>
+  </div>
+
+<!-- weather -->
+  <div class="weather-container">
+    <h1 id="weather"><u>Weather</u></h1>
+    <div id="weather-info">
+      <p id="location"></p>
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+    <br>
+    <input type="text" class="" id="city-search" placeholder="Enter city name">
+    <br>
+    <br>
+    <button class="" id="ss-search" onclick="getWeather(),hide_element()">Search</button>
+  </div>
+
+<!-- time -->
+ <div id="time-date">
+  <p id="currentTime"></p>
+  <p id="currentDate"></p>
+ </div>
+  
+  
+<!-- USD_INR -->
+<select  id="currency-option" onchange="getCurrencyChange()">
+    <option value="INR">INR</option>
+    <option value="EUR">EUR</option>
+    <option value="CHF">CHF</option>
+    <option value="HKD">HKD</option>
+    <option value="AUD">AUD</option>
+    <option value="ISK">ISK</option>
+</select>
+<div id="currency-change"><p></p></div>
+
+<!-- crypto -->
+<div id="crypto-rates">
+  <h5>Top 5 Cryptocurrency Rate of Change:</h5>
+  <ul id="crypto-list" class="crypto-horizontal"></ul>
+</div>
+
+
+<!-- preloader -->
+
+<div id="preloader"></div> 
+ 
+
+
+
+
+<script src="/home_page/script.js"></script>
+  </body>
+  </html>
+
+
