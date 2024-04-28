@@ -169,10 +169,11 @@ select, input[type="text"] {
   bottom: 15%;
 }
 #currency-change{
-  margin-top: 30%;
+  margin-top: 33%;
   margin-left: 0.5%;
   font-family:'Courier New', Courier, monospace;
   color: #A2769D;
+  
 
 }
 
