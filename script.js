@@ -178,13 +178,6 @@ function displayCryptoRates(cryptos) {
 fetchCryptoData();
 
 
-preloader
-
-const preloader = document.getElementById("preloader");
-
-window.addEventListener("load", () => {
-  preloader.classList.add("hidden");
-});
 
 
 
