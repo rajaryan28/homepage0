@@ -139,7 +139,7 @@ function getCurrencyChange() {
       else if(optionText=="ISK"){
         currentRate = data.data.ISK
       }
-      document.getElementById("currency-change").textContent = ` 1 USD = ${currency_option} ${currentRate}`;
+      document.getElementById("currency-change").textContent = `Currently: 1 USD = ${currency_option} ${currentRate}`;
     });
 }
 getCurrencyChange();
