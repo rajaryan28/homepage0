@@ -30,7 +30,7 @@ body{
 }
 
 select, input[type="text"] {
-  color:white;
+  
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -44,6 +44,7 @@ select, input[type="text"] {
   width: 7vw;
 }
 #search-term{
+  color:white;
   width: 39vw;
   background: transparent;
   height:20px ;
